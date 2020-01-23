@@ -1,5 +1,5 @@
 var swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
+    direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 20,
     mousewheel: true,
@@ -18,7 +18,7 @@ var swiper = new Swiper('.swiper-container', {
             if(this.realIndex == 4) {
                 animatePeople("servPeople", 0, 400, 8000);
                 animateClients("servClients", 0, 150, 5000);
-                animateYears("servYears", 0, 8, 3000);
+                animateYears("servYears", 0, 8, 4000);
             }
         }
     }

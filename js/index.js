@@ -10,7 +10,6 @@ var swiper = new Swiper('.swiper-container', {
     },
     on: {
         slideChangeTransitionStart:function(){
-            console.log(this.realIndex);
             if(this.realIndex == 4) {
                 animatePeople("servPeople", 0, 400, 8000);
                 animateClients("servClients", 0, 150, 5000);

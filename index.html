@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../package/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>PRISMA</title>
+</head>
+<body>
+
+    <div class="swiper-container">
+		<div class="header header-brand" id="myHeader">
+			<figure class="figure">
+				<img class="figure-img" src="./assets/prisma_logo.png" height="40px">
+			</figure>
+			<h2 class="ml-2 principal-brand">prisma</h2>
+		</div>
+		<!-- <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-light">
+			<a class="navbar-brand" href="#">PRISMA</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse text-center" id="navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about-us">Quienes Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Servicios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#advantages">Ventajas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#other-services">Otros Servicios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#machines">Maquinaria</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#products">Nuestros Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#clients">Clientes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact-us">Contactanos</a>
+					</li>
+				</ul>
+			</div>
+		</nav> -->
+        <div class="swiper-wrapper">
+            <section class="swiper-slide back-home">
+				<div class="container" style="margin-top: -150px;">
+					<figure>
+						<img class="figure-img img-fluid" src="./assets/logo_bg.png" width="70%">
+					</figure>
+					<h3 class="my-5"> Servicios profesionales de limpieza en CDMX</h3>
+					<a class="btn btn-buy mt-3" data-toggle="modal" data-target="#modalContactForm">cotiza ahora</a>
+				</div>
+			</section>
+            <section class="swiper-slide back-blue">
+				<div class="container" style="margin-top: -100px;">
+					<h2 class="mb-4">¿Quienes somos?</h2>
+					<p>
+						Somos una empresa que brinda Servicios Profesionales de Limpieza, a través de personal 
+						calificado y  certificado. Nuestro principal objetivo es aumentar la productividad y las 
+						sensaciones pulcritud, confort, seguridad y bienestar en cualquier espacio o área de trabajo 
+						mediante soluciones de limpieza. Una de  nuestras prioridades es la conservación del medio 
+						ambiente, por ello empleamos productos ecológicos y  bio-degradables de la mejor calidad.
+					</p>
+				</div>
+			</section>
+            <section class="swiper-slide back-green">
+				<div class="container" style="margin-top: -50px;">
+					<h2 class="mb-2">Servicios</h2>
+					
+					<div id="multi-item-services" class="carousel slide carousel-multi-item" data-ride="carousel">
+						<div class="controls-top">
+						  <a class="btn-floating" href="#multi-item-services" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+						  <a class="btn-floating" href="#multi-item-services" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+						  <a class="btn-floating" href="#multi-item-services" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+						</div>
+
+						<ol class="carousel-indicators">
+						  <li data-target="#multi-item-services" data-slide-to="0" class="active"></li>
+						  <li data-target="#multi-item-services" data-slide-to="1"></li>
+						  <li data-target="#multi-item-services" data-slide-to="2"></li>
+						</ol>
+
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="view mb-2">
+											<img class="img-fluid-services" src="./assets/serv_banco.jpg" alt="Servicio a Bancos">
+											<div class="mask rgba-black-light"></div>
+										</div>
+										<div class="carousel-caption">
+											<h4 class="h3-responsive">Bancos</h4>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 clearfix d-md-block">
+										<div class="view mb-2">
+											<img class="img-fluid-services" src="./assets/serv_comercial.jpg" alt="Servicio a Centros Comerciales">
+											<div class="mask rgba-black-light"></div>
+										</div>
+										<div class="carousel-caption">
+											<h4 class="h3-responsive">Centros Comerciales</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="view mb-2">
+											<img class="img-fluid-services" src="./assets/serv_laboratorio.jpg" alt="Servicio a Laboratorios">
+											<div class="mask rgba-black-slight"></div>
+										</div>
+										<div class="carousel-caption">
+											<h4 class="h3-responsive">Laboratorios</h4>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 clearfix d-md-block">
+										<div class="view mb-2">
+											<img class="img-fluid-services" src="./assets/serv_hospital.jpg" alt="Servicio a Hospitales">
+											<div class="mask rgba-black-strong"></div>
+										</div>
+										<div class="carousel-caption">
+											<h4 class="h3-responsive">Hospitales</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="view mb-2">
+											<img class="img-fluid-services" src="./assets/serv_oficina.jpg" alt="Servicio a Oficinas">
+											<div class="mask rgba-black-slight"></div>
+										</div>
+										<div class="carousel-caption">
+											<h4 class="h3-responsive">Oficinas</h4>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 clearfix d-md-block">
+										<div class="view mb-2">
+											<img class="img-fluid-services" src="./assets/serv_corporativo.jpg" alt="Servicio a Corporativos">
+											<div class="mask rgba-black-strong"></div>
+										</div>
+										<div class="carousel-caption">
+											<h4 class="h3-responsive">Corporativos</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<a class="carousel-control-prev" href="#multi-item-services" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#multi-item-services" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+					  </div>
+				</div>
+			</section>
+            <section class="swiper-slide back-blue">
+				<div class="container">
+					<h2 class="mb-4">Ventajas</h2>
+					<div class="row justify-content-center" style="margin-top: 110px;">
+						<div class="col-6 col-md-3 advantage-container">
+							<figure class="figure card-advantage">
+								<img class="figure-img img-fluid" src="./assets/adva1.png">
+							</figure>
+							<div class="advantage-text">
+								<h4 class="advantage-title mb-4">Productos Biodegradables</h4>
+								<p class="advantage-desc">
+									Contamos con productos biodegradables y equipo de limpieza de la más alta calidad.
+								</p>
+							</div>
+						</div>
+						<div class="col-6 col-md-3 advantage-container">
+							<figure class="figure card-advantage">
+								<img class="figure-img img-fluid" src="./assets/adva2.png" width="68%">
+							</figure>
+							<div class="advantage-text">
+								<h4 class="advantage-title mb-5">Código de Colores</h4>
+								<p class="advantage-desc">
+									Para evitar la contaminación cruzada en los diferentes departamentos.
+								</p>
+							</div>
+						</div>
+						<div class="col-6 col-md-3 advantage-container">
+							<figure class="figure card-advantage">
+								<img class="figure-img img-fluid" src="./assets/adva3.png" width="80%">
+							</figure>
+							<div class="advantage-text">
+								<h4 class="advantage-title mb-5">Confidencialidad</h4>
+								<p class="advantage-desc">
+									Capacitación permanente y objetiva para todo el personal de la empresa.
+								</p>
+							</div>
+						</div>
+						<div class="col-6 col-md-3 advantage-container">
+							<figure class="figure card-advantage">
+								<img class="figure-img img-fluid" src="./assets/adva4.png" width="75%">
+							</figure>
+							<div class="advantage-text">
+								<h4  class="advantage-title mb-5">Personal Capacitado</h4>
+								<p class="advantage-desc">
+									Absoluta discreción y confidencialidad con todos nuestros clientes.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section class="swiper-slide back-green">
+				<div class="container" style="margin-top: -130px;">
+					<h2 class="mb-4">Servicios Adicionales</h2>
+					<div class="row">
+						<div class="col-12 col-bg-8 offset-bg-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid aditional-img" src="./assets/adit_services.png">
+							</figure>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-4 col-md-2 offset-sm-3">
+							<div class="card-aditional">
+								<div id="servPeople" class="font-count-aditional card-count-aditional">0</div>
+								<p class="font-count-aditional">Personas a su servicio</p>
+							</div>
+						</div>
+						<div class="col-4 col-md-2">
+							<div class="card-aditional">
+								<div id="servClients" class="font-count-aditional card-count-aditional">0</div>
+								<p class="font-count-aditional">Clientes satisfechos</p>
+							</div>
+						</div>
+						<div class="col-4 col-md-2">
+							<div class="card-aditional">
+								<div id="servYears" class="font-count-aditional card-count-aditional">0</div>
+								<p class="font-count-aditional">Años dando servicio</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section class="swiper-slide back-green">
+				<div class="container" style="margin-top: -100px;">
+					<h2>Nuestros Productos</h2>
+					<p class="my-5">La marca Diversey nos respalda…
+						Utilizamos productos Diversey, quien formula productos de higiene que ayudan a nuestros clientes a reducir su impacto ambiental en cada área de aplicación. 
+						Trasladamos nuestra experiencia en minimizar el impacto de sus operaciones gracias a nuestra capacidad única para revisar, evaluar y proporcionarle recomendaciones 
+						para reducir su consumo de agua, energía y desechos.
+					</p>
+					<div class="card-brand">
+						<figure class="figure p-2">
+							<img class="figure-img img-fuid" src="./assets/diversey.png" alt="Diservey Logo" width="80%">
+						</figure>
+						<figure class="figure p-2">
+							<img class="figure-img img-fuid" src="./assets/diversey_green.png" alt="Diservey Logo" width="80%">
+						</figure>
+					</div>
+				</div>
+			</section>
+            <section class="swiper-slide back-blue">
+				<div class="container">
+					<h2 class="mb-5">Nuestra Maquinaria</h2>
+					<figure>
+						<img class="img-fluid" src="./assets/maq_all.png">
+					</figure>
+					<!-- <div id="carousel-equipment" class="carousel slide carousel-fade" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-equipment" data-slide-to="0"></li>
+							<li data-target="#carousel-equipment" data-slide-to="1" class="active"></li>
+							<li data-target="#carousel-equipment" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<div class="view card-equipment">
+									<figure class="figure">
+										<img class="d-block img-fluid" src="./assets/maq-lava-alfombras.png" alt="Lava Alfombras">
+									</figure>
+									<div class="mask rgba-black-light"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="view card-equipment">
+									<figure class="figure">
+										<img class="d-block img-fluid" src="./assets/maq-pulidoras.png" alt="Pulidoras">
+									</figure>
+									<div class="mask rgba-black-strong"></div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="view card-equipment">
+									<figure class="figure">
+										<img class="d-block img-fluid" src="./assets/maq-restregadoras.png" alt="Restregadoras">
+									</figure>
+									<div class="mask rgba-black-slight"></div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</section>
+            <section class="swiper-slide back-green">
+				<div class="container" style="margin-top: -100px;">
+					<h2 class="mb-5">Nuestros Reconocimientos</h2>
+					<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+						<!--Controls-->
+						<div class="controls-top">
+						  <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+						  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+						</div>
+						<!--/.Controls-->
+				  
+						<!--Indicators-->
+						<ol class="carousel-indicators">
+						  <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+						  <li data-target="#multi-item-example" data-slide-to="1"></li>
+						</ol>
+						<!--/.Indicators-->
+				  
+						<!--Slides-->
+						<div class="carousel-inner" role="listbox">
+				  
+						  <!--First slide-->
+						  <div class="carousel-item active">
+							<div class="row">
+							  <div class="col-6 col-md-4">
+								<div class="card mb-2">
+								  <img class="card-img-top" src="./assets/certi1.jpg" alt="Card image cap">
+								</div>
+							  </div>
+				  
+							  <div class="col-6 col-md-4 clearfix d-md-block">
+								<div class="card mb-2">
+								  <img class="card-img-top" src="./assets/certi2.jpg" alt="Card image cap">
+								</div>
+							  </div>
+				  
+							  <div class="col-6 col-md-4 clearfix d-md-block">
+								<div class="card mb-2">
+								  <img class="card-img-top" src="./assets/certi3.jpg" alt="Card image cap">
+								</div>
+							  </div>
+
+							  <div class="col-6 col-md-4">
+								  <div class="card mb-2">
+									<img class="card-img-top" src="./assets/certi4.jpg" alt="Card image cap">
+								  </div>
+								</div>
+					
+								<div class="col-6 col-md-4 clearfix d-md-block">
+								  <div class="card mb-2">
+									<img class="card-img-top" src="./assets/certi5.jpg"
+									  alt="Card image cap">
+								  </div>
+								</div>
+					
+								<div class="col-6 col-md-4 clearfix d-md-block">
+								  <div class="card mb-2">
+									<img class="card-img-top" src="./assets/certi6.jpg" alt="Card image cap">
+								  </div>
+								</div>
+							</div>
+						  </div>
+						  
+						  <div class="carousel-item">
+							<div class="row">
+							  <div class="col-6 col-md-4">
+								<div class="card mb-2">
+								  <img class="card-img-top" src="./assets/certi7.jpg" alt="Card image cap">
+								</div>
+							  </div>
+				  
+							  <div class="col-6 col-md-4 clearfix d-md-block">
+								<div class="card mb-2">
+								  <img class="card-img-top" src="./assets/certi8.jpg" alt="Card image cap">
+								</div>
+							  </div>
+				  
+							  <div class="col-6 col-md-4 clearfix d-md-block">
+								<div class="card mb-2">
+								  <img class="card-img-top" src="./assets/certi9.jpg" alt="Card image cap">
+								</div>
+							  </div>
+
+							  <div class="col-6 col-md-4">
+								  <div class="card mb-2">
+									<img class="card-img-top" src="./assets/certi1.jpg" alt="Card image cap">
+								  </div>
+								</div>
+					
+								<div class="col-6 col-md-4 clearfix d-md-block">
+								  <div class="card mb-2">
+									<img class="card-img-top" src="./assets/certi11.jpg" alt="Card image cap">
+								  </div>
+								</div>
+					
+								<div class="col-6 col-md-4 clearfix d-md-block">
+								  <div class="card mb-2">
+									<img class="card-img-top" src="./assets/certi10.jpg" alt="Card image cap">
+								  </div>
+								</div>
+							</div>
+						  </div>
+					  </div>
+				</div>
+			</section>
+            <section class="swiper-slide back-blue">
+				<div class="container" style="margin-top: -100px;">
+					<h2 class="mb-5">Nuestros Clientes</h2>
+					<div class="row">
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca1.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca2.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca3.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca4.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca5.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca6.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca7.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca8.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca9.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca10.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca11.png" alt="marca1">
+							</figure>
+						</div>
+						<div class="col-4 col-md-2">
+							<figure class="figure">
+								<img class="figure-img img-fluid" src="./assets/marca12.png" alt="marca1">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section class="swiper-slide back-green">
+				<div class="container">
+					<div class="contact-form">
+						<h3 class="pt-4">¿Requiere una Cotización?</h3>
+						<h4 class="mb-4">¡Contáctenos!</h4>
+						<form class="px-4 pb-4">
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Nombre">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="email" placeholder="Correo electrónico">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" type="text" placeholder="Mensaje" rows="3"></textarea>
+							</div>
+							<div style="text-align: center;">
+								<div class="g-recaptcha" data-sitekey="6LesEdAUAAAAAIDk-ivvCN-2AL5-Dk8EpiU8BRUr" style="display: inline-block;"></div>
+							</div>
+							<br/>
+							<input class="btn contact-button" type="submit" value="Cotizar ahora">
+						</form>
+					</div>
+				</div>
+			</section>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+	</div>
+	
+	<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-weight-bold">¡Solicite una cotización!</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body mx-3">
+					<div class="md-form mb-3">
+						<input class="form-control" type="text" placeholder="Nombre">
+					</div>
+
+					<div class="md-form mb-3">
+						<input class="form-control" type="email" placeholder="Correo electrónico">
+					</div>
+
+					<div class="md-form">
+						<textarea class="form-control" type="text" placeholder="Mensaje" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<button class="btn btn-primary"> Enviar <i class="fas fa-paper-plane-o ml-1"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<script src="../package/js/swiper.min.js"></script>
+	<script src="./js/index.js"></script>
+	
+</body>
+</html>

@@ -228,11 +228,11 @@ figure {
         font-size: .8rem;
     }
     .advantage-container{
-        margin-bottom: 120px!important;
+        margin-bottom: 100px!important;
     }
-    .advantage-text {
+    /* .advantage-text {
         min-height: 180px;
-    }
+    } */
     .img-fluid-services {
         max-width: 90%;
         height: auto;

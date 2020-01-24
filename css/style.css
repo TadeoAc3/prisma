@@ -234,7 +234,7 @@ figure {
         min-height: 180px;
     } */
     .img-fluid-services {
-        max-width: 65%;
+        max-width: 60%;
         height: auto;
     }
 }

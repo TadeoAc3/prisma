@@ -251,6 +251,10 @@ figure {
     justify-content: center;
 }
 
+/* Carousel */
+.carousel-indicators {
+    bottom: -20px;
+}
 
 @media screen and (max-width: 720px) {
     .card-brand {

@@ -208,35 +208,8 @@ figure {
     color: black;
 }
 
-
-@media screen and (max-width: 720px) {
-    .card-brand {
-        background-color: rgb(255, 255, 255);
-        /* border: white solid 1px; */
-        border-radius: 30px;
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
-        width: 90%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .advantage-title, .advantage-desc, .font-count-aditional {
-        color: #015181;
-        font-size: .8rem;
-    }
-    .advantage-container{
-        margin-bottom: 100px!important;
-    }
-    /* .advantage-text {
-        min-height: 180px;
-    } */
-    .img-fluid-services {
-        max-width: 60%;
-        height: auto;
-    }
+.fixed-top .title-p {
+    top: 10px!important;
 }
 
 .header-brand {
@@ -277,6 +250,56 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 720px) {
+    .card-brand {
+        background-color: rgb(255, 255, 255);
+        /* border: white solid 1px; */
+        border-radius: 30px;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .advantage-title, .advantage-desc, .font-count-aditional {
+        color: #015181;
+        font-size: .8rem;
+    }
+    .advantage-container{
+        margin-bottom: 100px!important;
+    }
+    /* .advantage-text {
+        min-height: 180px;
+    } */
+    .img-fluid-services {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .card-advantage {
+        top: -86px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%; 
+        height: 100px;
+        width: 100px;
+    }
+    
+    .card-advantage img {
+        margin-top: 16px;
+        max-width: 65%;
+    }
+
+    .advantage-text {
+        padding-top: 14px;
+    }
+
 }
 
 /* arrows */

@@ -303,6 +303,10 @@ figure {
         line-height: 16px;
     }
 
+    .card-img-top {
+        width: 80%;
+    }
+
 }
 
 /* captcha */

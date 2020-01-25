@@ -300,6 +300,10 @@ figure {
         padding-top: 14px;
     }
 
+    .advantage-desc {
+        line-height: 16px;
+    }
+
 }
 
 /* arrows */

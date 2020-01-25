@@ -306,6 +306,11 @@ figure {
 
 }
 
+/* captcha */
+.g-recaptcha {
+    display: inline-block;
+}
+
 /* arrows */
 i {
     border: solid white;

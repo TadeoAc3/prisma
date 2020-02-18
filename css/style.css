@@ -225,6 +225,26 @@ figure {
     margin-top: 22px;
 }
 
+.card-transparent {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.card-body {
+    padding: 0.75rem;
+}
+
+.card-title, .card-text {
+    color: black;
+}
+
+.carousel-control-prev.push-left {
+    left: -80px;
+}
+
+.carousel-control-next.push-right {
+    right: -80px;
+} 
+
 /* fixed header */
 .header {
     padding: 10px 16px;
@@ -256,7 +276,7 @@ figure {
     bottom: -20px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
     .card-brand {
         background-color: rgb(255, 255, 255);
         /* border: white solid 1px; */
@@ -311,6 +331,30 @@ figure {
         width: 100%;
     }
 
+    .card-title, .card-text {
+        font-size: .7em;
+    }
+
+    .carousel-control-prev.push-left {
+        left: 0;
+    }
+    
+    .carousel-control-next.push-right {
+        right: 0;
+    } 
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .carousel-control-prev.push-left {
+        left: -60px;
+    }
+    
+    .carousel-control-next.push-right {
+        right: -60px;
+    } 
+
 }
 
 /* captcha */
@@ -318,5 +362,21 @@ figure {
     display: inline-block;
 }
 
+
+/* center 3 columns */
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+}
 
 /*carousel*/

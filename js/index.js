@@ -16,8 +16,6 @@ var swiper = new Swiper('.swiper-container', {
         slideChangeTransitionStart:function(){
             console.log(this.realIndex);
             if(this.realIndex == 4) {
-                animatePeople("servPeople", 0, 400, 8000);
-                animateClients("servClients", 0, 150, 5000);
                 animateYears("servYears", 0, 8, 4000);
             }
         }
@@ -45,36 +43,6 @@ $(document).ready(function() {
     });
     
 });
-
-function animatePeople(id, start, end, duration) {
-    var range = end + start;
-    var current = start;
-    var increment = end > start ? 1 : +1;
-    var stepTime = Math.abs(Math.floor(duration / range));
-    var obj = document.getElementById(id);
-    var timer = setInterval(function() {
-        current += increment;
-        obj.innerHTML = current;
-        if (current == end) {
-            clearInterval(timer);
-        }
-    }, stepTime);
-}
-
-function animateClients(id, start, end, duration) {
-    var range = end + start;
-    var current = start;
-    var increment = end > start ? 1 : +1;
-    var stepTime = Math.abs(Math.floor(duration / range));
-    var obj = document.getElementById(id);
-    var timer = setInterval(function() {
-        current += increment;
-        obj.innerHTML = current;
-        if (current == end) {
-            clearInterval(timer);
-        }
-    }, stepTime);
-}
 
 function animateYears(id, start, end, duration) {
     var range = end + start;

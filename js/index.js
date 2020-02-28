@@ -59,6 +59,24 @@ function animateYears(id, start, end, duration) {
     }, stepTime);
 }
 
+const $meetUs = document.getElementById('meetUs');
+$meetUs.animate([
+    {
+        transform: 'translateY(0px)'
+    },
+    {
+        transform: 'translateY(200px)'
+    }
+], {
+    duration: 3000,
+    delay: 500,
+    direction: 'normal',
+    easing: 'linear',
+    interations: Infinity,
+    fill: 'forwards',
+    iterationStart: .5,
+})
+
 
 //carousel
 $('#carousel-resp-example').on('slide.bs.carousel', function (e) {

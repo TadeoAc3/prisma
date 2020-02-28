@@ -276,6 +276,12 @@ figure {
     bottom: -20px;
 }
 
+.carousel-caption {
+    left:20%;
+    right:20%;
+    bottom: -10px; 
+}
+
 @media screen and (max-width: 767px) {
     .card-brand {
         background-color: rgb(255, 255, 255);

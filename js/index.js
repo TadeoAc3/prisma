@@ -15,6 +15,23 @@ var swiper = new Swiper('.swiper-container', {
     on: {
         slideChangeTransitionStart:function(){
             console.log(this.realIndex);
+            if(this.realIndex == 1) {
+                $meetUs.animate([
+                    {
+                        transform: 'translateY(-50px)'
+                    },
+                    {
+                        transform: 'translateY(0px)'
+                    }
+                ], {
+                    duration: 1000,
+                    delay: 0,
+                    direction: 'normal',
+                    easing: 'linear',
+                    interations: Infinity,
+                    fill: 'forwards',
+                })
+            }
             if(this.realIndex == 4) {
                 animateYears("servYears", 0, 8, 4000);
             }
@@ -60,22 +77,6 @@ function animateYears(id, start, end, duration) {
 }
 
 const $meetUs = document.getElementById('meetUs');
-$meetUs.animate([
-    {
-        transform: 'translateY(0px)'
-    },
-    {
-        transform: 'translateY(200px)'
-    }
-], {
-    duration: 3000,
-    delay: 500,
-    direction: 'normal',
-    easing: 'linear',
-    interations: Infinity,
-    fill: 'forwards',
-    iterationStart: .5,
-})
 
 
 //carousel

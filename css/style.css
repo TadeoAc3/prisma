@@ -340,6 +340,13 @@ figure {
     /* animation-iteration-count: infinite; */
 }
 
+.fan-img-animation {
+    animation-name: fan-spin;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 @keyframes title-slide {
     0% {
         -webkit-transform: translate(0px, -100px);
@@ -361,6 +368,24 @@ figure {
         color: white;
     }
 }
+
+@keyframes fan-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     .card-brand {

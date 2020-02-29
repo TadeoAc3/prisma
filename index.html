@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="package/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 
     <title>PRISMA</title>
 </head>
@@ -28,9 +29,10 @@
         <div class="swiper-wrapper">
             <section class="swiper-slide back-home">
 				<div class="container">
-					<figure>
+					<!-- <figure>
 						<img class="figure-img img-fluid" src="./assets/logo_bg.png" width="70%">
-					</figure>
+					</figure> -->
+					<h1 id="principal-title" class="principal-brand">Prisma</h1>
 					<h3 class="my-5"> Servicios profesionales de limpieza en CDMX</h3>
 					<a class="btn btn-buy mt-3" data-toggle="modal" data-target="#modalContactForm">cotiza ahora</a>
 				</div>
@@ -241,7 +243,7 @@
 						</div>
 						<div class="col-6 col-md-3 advantage-container">
 							<figure class="figure card-advantage">
-								<img class="figure-img img-fluid" src="./assets/adva3.png" width="80%">
+								<img id="hat-appear" class="figure-img img-fluid" src="./assets/adva3.png" width="80%">
 							</figure>
 							<div class="advantage-text">
 								<h4 class="advantage-title">Confidencialidad</h4>
@@ -359,21 +361,21 @@
 							<div class="row">
 								<div class="col-4">
 									<figure class="figure card-equipment">
-										<img class="img-fluid" src="./assets/maq-lava-alfombras.png">
+										<img id="left-machine" class="img-fluid" src="./assets/maq-lava-alfombras.png">
 									</figure>
 									<div class="mask rgba-black-light mt-2" style="color: white;">Lava Alfombras</div>
 								</div>
 								<div class="col-4">
 									<figure class="figure card-equipment">
-										<img class="img-fluid" src="./assets/maq-restregadoras.png">
+										<img id="center-machine" class="img-fluid" src="./assets/maq-restregadoras.png">
 									</figure>
 									<div class="mask rgba-black-light mt-2" style="color: white;">Restregadoras</div>
 								</div>
 								<div class="col-4">
 									<figure class="figure card-equipment">
-										<img class="img-fluid" src="./assets/maq-pulidoras.png">
+										<img id="right-machine" class="img-fluid" src="./assets/maq-pulidoras.png">
 									</figure>
-									<div class="mask rgba-black-light mt-2" style="color: white;">Pulidoras</div>
+									<div id="right-machine" class="mask rgba-black-light mt-2" style="color: white;">Pulidoras</div>
 								</div>
 							</div>
 						</div>

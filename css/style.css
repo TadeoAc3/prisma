@@ -219,6 +219,7 @@ figure {
 
 .principal-brand {
     font-family: 'rez';
+    letter-spacing: .10em;
 }
 
 .card-advantage img {
@@ -281,111 +282,6 @@ figure {
     right:20%;
     bottom: -10px; 
 }
-
-/* Animaciones */
-
-/* slide 2 */
-.second-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-/* slide 3 */
-.third-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-/* slide 4 */
-.fourth-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-/* slide 5 */
-.fifth-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-/* slide 6 */
-.sixth-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-/* slide 7 */
-.seventh-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-/* slide 8 */
-.eighth-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-.nineth-slide-animation {
-    animation-name: title-slide;
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    /* animation-iteration-count: infinite; */
-}
-
-.fan-img-animation {
-    animation-name: fan-spin;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes title-slide {
-    0% {
-        -webkit-transform: translate(0px, -100px);
-        -moz-transform: translate(0px, -100px);
-        -ms-transform: translate(0px, -100px);
-        -o-transform: translate(0px, -100px);
-        transform: translate(0px, -100px);
-        color: transparent;
-    }
-    50% {
-        color: transparent;
-    }
-    100% {
-        -webkit-transform: translate(0px, 0px);
-        -moz-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        -o-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-        color: white;
-    }
-}
-
-@keyframes fan-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
 
 @media screen and (max-width: 767px) {
     .card-brand {

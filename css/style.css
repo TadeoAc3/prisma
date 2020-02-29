@@ -284,20 +284,73 @@ figure {
 
 /* Animaciones */
 
-.first-testing {
-    animation-name: first-testing;
-    animation-duration: 1s;
+/* slide 2 */
+.second-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+/* slide 3 */
+.third-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+/* slide 4 */
+.fourth-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+/* slide 5 */
+.fifth-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+/* slide 6 */
+.sixth-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+/* slide 7 */
+.seventh-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+/* slide 8 */
+.eighth-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+.nineth-slide-animation {
+    animation-name: title-slide;
+    animation-duration: 1.2s;
     animation-timing-function: ease;
     /* animation-iteration-count: infinite; */
 }
 
-@keyframes first-testing {
+@keyframes title-slide {
     0% {
-        -webkit-transform: translate(0px, -80px);
-        -moz-transform: translate(0px, -80px);
-        -ms-transform: translate(0px, -80px);
-        -o-transform: translate(0px, -80px);
-        transform: translate(0px, -80px);
+        -webkit-transform: translate(0px, -100px);
+        -moz-transform: translate(0px, -100px);
+        -ms-transform: translate(0px, -100px);
+        -o-transform: translate(0px, -100px);
+        transform: translate(0px, -100px);
+        color: transparent;
+    }
+    50% {
+        color: transparent;
     }
     100% {
         -webkit-transform: translate(0px, 0px);
@@ -305,6 +358,7 @@ figure {
         -ms-transform: translate(0px, 0px);
         -o-transform: translate(0px, 0px);
         transform: translate(0px, 0px);
+        color: white;
     }
 }
 

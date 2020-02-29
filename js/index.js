@@ -16,28 +16,85 @@ var swiper = new Swiper('.swiper-container', {
         slideChangeTransitionStart:function(){
             console.log(this.realIndex);
             if(this.realIndex == 1) {
-                /* $meetUs.animate([
-                    {
-                        transform: 'translateY(-50px)'
-                    },
-                    {
-                        transform: 'translateY(0px)'
-                    }
-                ], {
-                    duration: 800,
-                    delay: 0,
-                    direction: 'normal',
-                    easing: 'linear',
-                    interations: Infinity,
-                    fill: 'forwards',
-                }) */
-                $meetUs.classList.add("first-testing");
+                $secondTitle.classList.add("second-slide-animation");
+                $thirdTitle.classList.remove("third-slide-animation");
+                $fourthTitle.classList.remove("fourth-slide-animation");
+                $fifthTitle.classList.remove("fifth-slide-animation");
+                $sixthTitle.classList.remove("sixth-slide-animation");
+                $seventhTitle.classList.remove("seventh-slide-animation");
+                $eighthTitle.classList.remove("eight-slide-animation");
+                $ninethTitle.classList.remove("nineth-slide-animation");
             }
             if(this.realIndex == 2) {
-                $meetUs.classList.remove("first-testing");
+                $thirdTitle.classList.add("third-slide-animation");
+                $secondTitle.classList.remove("second-slide-animation");
+                $fourthTitle.classList.remove("fourth-slide-animation");
+                $fifthTitle.classList.remove("fifth-slide-animation");
+                $sixthTitle.classList.remove("sixth-slide-animation");
+                $seventhTitle.classList.remove("seventh-slide-animation");
+                $eighthTitle.classList.remove("eight-slide-animation");
+                $ninethTitle.classList.remove("nineth-slide-animation");
+            }
+            if(this.realIndex == 3) {
+                $fourthTitle.classList.add("fourth-slide-animation");
+                $secondTitle.classList.remove("second-slide-animation");
+                $thirdTitle.classList.remove("third-slide-animation");
+                $fifthTitle.classList.remove("fifth-slide-animation");
+                $sixthTitle.classList.remove("sixth-slide-animation");
+                $seventhTitle.classList.remove("seventh-slide-animation");
+                $eighthTitle.classList.remove("eight-slide-animation");
+                $ninethTitle.classList.remove("nineth-slide-animation");
             }
             if(this.realIndex == 4) {
                 animateYears("servYears", 0, 8, 4000);
+                $fifthTitle.classList.add("fifth-slide-animation");
+                $secondTitle.classList.remove("second-slide-animation");
+                $thirdTitle.classList.remove("third-slide-animation");
+                $fourthTitle.classList.remove("fourth-slide-animation");
+                $sixthTitle.classList.remove("sixth-slide-animation");
+                $seventhTitle.classList.remove("seventh-slide-animation");
+                $eighthTitle.classList.remove("eight-slide-animation");
+                $ninethTitle.classList.remove("nineth-slide-animation");
+            }
+            if(this.realIndex == 5) {
+                $sixthTitle.classList.add("sixth-slide-animation");
+                $secondTitle.classList.remove("second-slide-animation");
+                $thirdTitle.classList.remove("third-slide-animation");
+                $fourthTitle.classList.remove("fourth-slide-animation");
+                $fifthTitle.classList.remove("fifth-slide-animation");
+                $seventhTitle.classList.remove("seventh-slide-animation");
+                $eighthTitle.classList.remove("eight-slide-animation");
+                $ninethTitle.classList.remove("nineth-slide-animation");
+            }
+            if(this.realIndex == 6) {
+                $seventhTitle.classList.add("seventh-slide-animation");
+                $secondTitle.classList.remove("second-slide-animation");
+                $thirdTitle.classList.remove("third-slide-animation");
+                $fourthTitle.classList.remove("fourth-slide-animation");
+                $fifthTitle.classList.remove("fifth-slide-animation");
+                $sixthTitle.classList.remove("sixth-slide-animation");
+                $eighthTitle.classList.remove("eight-slide-animation");
+                $ninethTitle.classList.remove("nineth-slide-animation");
+            }
+            if(this.realIndex == 7) {
+                $eighthTitle.classList.add("eighth-slide-animation");
+                $secondTitle.classList.remove("second-slide-animation");
+                $thirdTitle.classList.remove("third-slide-animation");
+                $fourthTitle.classList.remove("fourth-slide-animation");
+                $fifthTitle.classList.remove("fifth-slide-animation");
+                $sixthTitle.classList.remove("sixth-slide-animation");
+                $seventhTitle.classList.remove("seventh-slide-animation");
+                $ninethTitle.classList.remove("nineth-slide-animation");
+            }
+            if(this.realIndex == 8) {
+                $ninethTitle.classList.add("nineth-slide-animation");
+                $secondTitle.classList.remove("second-slide-animation");
+                $thirdTitle.classList.remove("third-slide-animation");
+                $fourthTitle.classList.remove("fourth-slide-animation");
+                $fifthTitle.classList.remove("fifth-slide-animation");
+                $sixthTitle.classList.remove("sixth-slide-animation");
+                $seventhTitle.classList.remove("seventh-slide-animation");
+                $eighthTitle.classList.remove("eighth-slide-animation");
             }
         }
     }
@@ -80,7 +137,14 @@ function animateYears(id, start, end, duration) {
     }, stepTime);
 }
 
-const $meetUs = document.getElementById('meetUs');
+const $secondTitle = document.getElementById('second-title');
+const $thirdTitle = document.getElementById('third-title');
+const $fourthTitle = document.getElementById('fourth-title');
+const $fifthTitle = document.getElementById('fifth-title');
+const $sixthTitle = document.getElementById('sixth-title');
+const $seventhTitle = document.getElementById('seventh-title');
+const $eighthTitle = document.getElementById('eighth-title');
+const $ninethTitle = document.getElementById('nineth-title');
 
 
 //carousel

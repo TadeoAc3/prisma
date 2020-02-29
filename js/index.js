@@ -15,6 +15,9 @@ var swiper = new Swiper('.swiper-container', {
     on: {
         slideChangeTransitionStart:function(){
             console.log(this.realIndex);
+            if(this.realIndex == 0) {
+                $secondTitle.classList.remove("second-slide-animation");
+            }
             if(this.realIndex == 1) {
                 $secondTitle.classList.add("second-slide-animation");
                 $thirdTitle.classList.remove("third-slide-animation");
@@ -73,7 +76,7 @@ var swiper = new Swiper('.swiper-container', {
                 $fourthTitle.classList.remove("fourth-slide-animation");
                 $fifthTitle.classList.remove("fifth-slide-animation");
                 $sixthTitle.classList.remove("sixth-slide-animation");
-                $eighthTitle.classList.remove("eight-slide-animation");
+                $eighthTitle.classList.remove("eighth-slide-animation");
                 $ninethTitle.classList.remove("nineth-slide-animation");
             }
             if(this.realIndex == 7) {
@@ -95,6 +98,9 @@ var swiper = new Swiper('.swiper-container', {
                 $sixthTitle.classList.remove("sixth-slide-animation");
                 $seventhTitle.classList.remove("seventh-slide-animation");
                 $eighthTitle.classList.remove("eighth-slide-animation");
+            }
+            if(this.realIndex == 9) {
+                $ninethTitle.classList.remove("nineth-slide-animation");
             }
         }
     }

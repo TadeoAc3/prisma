@@ -282,6 +282,32 @@ figure {
     bottom: -10px; 
 }
 
+/* Animaciones */
+
+.first-testing {
+    animation-name: first-testing;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes first-testing {
+    0% {
+        -webkit-transform: translate(0px, -80px);
+        -moz-transform: translate(0px, -80px);
+        -ms-transform: translate(0px, -80px);
+        -o-transform: translate(0px, -80px);
+        transform: translate(0px, -80px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
 @media screen and (max-width: 767px) {
     .card-brand {
         background-color: rgb(255, 255, 255);

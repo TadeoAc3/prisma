@@ -16,7 +16,7 @@ var swiper = new Swiper('.swiper-container', {
         slideChangeTransitionStart:function(){
             console.log(this.realIndex);
             if(this.realIndex == 1) {
-                $meetUs.animate([
+                /* $meetUs.animate([
                     {
                         transform: 'translateY(-50px)'
                     },
@@ -24,13 +24,14 @@ var swiper = new Swiper('.swiper-container', {
                         transform: 'translateY(0px)'
                     }
                 ], {
-                    duration: 1000,
+                    duration: 800,
                     delay: 0,
                     direction: 'normal',
                     easing: 'linear',
                     interations: Infinity,
                     fill: 'forwards',
-                })
+                }) */
+                $meetUs.classList.add("first-testing");
             }
             if(this.realIndex == 4) {
                 animateYears("servYears", 0, 8, 4000);

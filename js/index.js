@@ -33,6 +33,9 @@ var swiper = new Swiper('.swiper-container', {
                 }) */
                 $meetUs.classList.add("first-testing");
             }
+            if(this.realIndex == 2) {
+                $meetUs.classList.remove("first-testing");
+            }
             if(this.realIndex == 4) {
                 animateYears("servYears", 0, 8, 4000);
             }

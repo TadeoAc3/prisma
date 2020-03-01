@@ -79,6 +79,15 @@ figure {
     background-size: cover;
 }
 
+.fa.fa-phone { 
+    font-size:32px; 
+    color: white;
+}
+.fa.fa-mobile-phone { 
+    font-size:32px; 
+    color: white;
+}
+
 .btn {
     border-radius: 25px;
     width: 180px;

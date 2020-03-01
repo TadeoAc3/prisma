@@ -18,10 +18,16 @@ var swiper = new Swiper('.swiper-container', {
             if(this.realIndex == 0) {
                 $secondTitle.classList.remove("title-slide-animation");
                 $principalTitle.classList.add('principal-title-animation');
+                $usIconLeft.classList.remove("us-icon-animation");
+                $usIconCenter.classList.remove("us-icon-center-animation");
+                $usIconRight.classList.remove("us-icon-animation");
             }
             if(this.realIndex == 1) {
                 $secondTitle.classList.add("title-slide-animation");
                 $thirdTitle.classList.remove("title-slide-animation");
+                $usIconLeft.classList.add("us-icon-animation");
+                $usIconCenter.classList.add("us-icon-center-animation");
+                $usIconRight.classList.add("us-icon-animation");
                 $principalTitle.classList.remove('principal-title-animation');
                 $phoneShake.classList.remove("phone-shake-animation");
             }
@@ -29,6 +35,9 @@ var swiper = new Swiper('.swiper-container', {
                 $thirdTitle.classList.add("title-slide-animation");
                 $secondTitle.classList.remove("title-slide-animation");
                 $fourthTitle.classList.remove("title-slide-animation");
+                $usIconLeft.classList.remove("us-icon-animation");
+                $usIconCenter.classList.remove("us-icon-center-animation");
+                $usIconRight.classList.remove("us-icon-animation");
                 $fanSpin.classList.remove("fan-img-animation");
                 $phoneShake.classList.add("phone-shake-animation");
             }
@@ -69,18 +78,16 @@ var swiper = new Swiper('.swiper-container', {
                 $leftMachine.classList.remove("left-machine-animation");
                 $centerMachine.classList.remove("center-machine-animation");
                 $rightMachine.classList.remove("right-machine-animation");
-                // $clientBrand.classList.remove("client-brand-animation");
+                $phoneShake.classList.remove("phone-shake-animation");
             }
             if(this.realIndex == 8) {
                 $ninethTitle.classList.add("title-slide-animation");
                 $eighthTitle.classList.remove("title-slide-animation");
-                $phoneShake.classList.remove("phone-shake-animation");
-                // $clientBrand.classList.add("client-brand-animation");
+                $phoneShake.classList.add("phone-shake-animation");
             }
             if(this.realIndex == 9) {
                 $ninethTitle.classList.remove("title-slide-animation");
-                $phoneShake.classList.add("phone-shake-animation");
-                // $clientBrand.classList.remove("client-brand-animation");
+                $phoneShake.classList.remove("phone-shake-animation");
             }
         }
     }
@@ -95,12 +102,14 @@ const $sixthTitle = document.getElementById('sixth-title');
 const $seventhTitle = document.getElementById('seventh-title');
 const $eighthTitle = document.getElementById('eighth-title');
 const $ninethTitle = document.getElementById('nineth-title');
+const $usIconLeft = document.getElementById('us-icon-left');
+const $usIconCenter = document.getElementById('us-icon-center');
+const $usIconRight = document.getElementById('us-icon-right');
 const $fanSpin = document.getElementById('fan-img');
 const $phoneShake = document.getElementById('phone-shake');
 const $leftMachine = document.getElementById('left-machine');
 const $centerMachine = document.getElementById('center-machine');
 const $rightMachine = document.getElementById('right-machine');
-// const $clientBrand = document.getElementById('client-brand');
 
 var onloadCallback = function() {
     alert("grecaptcha is ready!");

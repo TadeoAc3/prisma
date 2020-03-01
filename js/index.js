@@ -23,20 +23,21 @@ var swiper = new Swiper('.swiper-container', {
                 $secondTitle.classList.add("title-slide-animation");
                 $thirdTitle.classList.remove("title-slide-animation");
                 $principalTitle.classList.remove('principal-title-animation');
+                $phoneShake.classList.remove("phone-shake-animation");
             }
             if(this.realIndex == 2) {
                 $thirdTitle.classList.add("title-slide-animation");
                 $secondTitle.classList.remove("title-slide-animation");
                 $fourthTitle.classList.remove("title-slide-animation");
                 $fanSpin.classList.remove("fan-img-animation");
-                $hatAppear.classList.remove("hat-appear-animation");
+                $phoneShake.classList.add("phone-shake-animation");
             }
             if(this.realIndex == 3) {
                 $fourthTitle.classList.add("title-slide-animation");
                 $thirdTitle.classList.remove("title-slide-animation");
                 $fifthTitle.classList.remove("title-slide-animation");
                 $fanSpin.classList.add("fan-img-animation");
-                $hatAppear.classList.add("hat-appear-animation");
+                $phoneShake.classList.remove("phone-shake-animation");
             }
             if(this.realIndex == 4) {
                 animateYears("servYears", 0, 8, 4000);
@@ -44,7 +45,6 @@ var swiper = new Swiper('.swiper-container', {
                 $fourthTitle.classList.remove("title-slide-animation");
                 $sixthTitle.classList.remove("title-slide-animation");
                 $fanSpin.classList.remove("fan-img-animation");
-                $hatAppear.classList.remove("hat-appear-animation");
             }
             if(this.realIndex == 5) {
                 $sixthTitle.classList.add("title-slide-animation");
@@ -69,13 +69,18 @@ var swiper = new Swiper('.swiper-container', {
                 $leftMachine.classList.remove("left-machine-animation");
                 $centerMachine.classList.remove("center-machine-animation");
                 $rightMachine.classList.remove("right-machine-animation");
+                // $clientBrand.classList.remove("client-brand-animation");
             }
             if(this.realIndex == 8) {
                 $ninethTitle.classList.add("title-slide-animation");
                 $eighthTitle.classList.remove("title-slide-animation");
+                $phoneShake.classList.remove("phone-shake-animation");
+                // $clientBrand.classList.add("client-brand-animation");
             }
             if(this.realIndex == 9) {
                 $ninethTitle.classList.remove("title-slide-animation");
+                $phoneShake.classList.add("phone-shake-animation");
+                // $clientBrand.classList.remove("client-brand-animation");
             }
         }
     }
@@ -91,16 +96,18 @@ const $seventhTitle = document.getElementById('seventh-title');
 const $eighthTitle = document.getElementById('eighth-title');
 const $ninethTitle = document.getElementById('nineth-title');
 const $fanSpin = document.getElementById('fan-img');
-const $hatAppear = document.getElementById('hat-appear');
+const $phoneShake = document.getElementById('phone-shake');
 const $leftMachine = document.getElementById('left-machine');
 const $centerMachine = document.getElementById('center-machine');
 const $rightMachine = document.getElementById('right-machine');
+// const $clientBrand = document.getElementById('client-brand');
 
 var onloadCallback = function() {
     alert("grecaptcha is ready!");
 };
 
 $(document).ready(function() {
+    $principalTitle.classList.add('principal-title-animation');
     
     /* if(window.screen.width > 720 ){
         var prevElem = document.getElementById('control-prev');

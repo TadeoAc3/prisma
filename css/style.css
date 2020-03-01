@@ -101,6 +101,18 @@ figure {
     color: #015181;
 }
 
+.us-image {
+    /* z-index:1; */
+    /* position: absolute; */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%; 
+    height: 80px;
+    width: 80px;
+}
+
 .card-count-aditional {
     border: 1px solid #015181;
     border-radius: 50%;

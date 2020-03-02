@@ -7,6 +7,12 @@
     /* animation-iteration-count: infinite; */
 }
 
+.us-description-animation {
+    animation-name: us-description;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
 .us-icon-animation {
     animation-name: us-icon;
     animation-duration: 3s;
@@ -90,6 +96,15 @@
         -o-transform: translate(0px, 0px);
         transform: translate(0px, 0px);
         color: white;
+    }
+}
+
+@keyframes us-description {
+    0% {
+
+    }
+    100% {
+        
     }
 }
 
@@ -221,87 +236,87 @@
 
 @keyframes phone-shake {
     0% {
-        -webkit-transform: rotate(10deg) translate(1px, 1px) scale(1);
-        -moz-transform: rotate(10deg) translate(1px, 1px) scale(1);
-        -ms-transform: rotate(10deg) translate(1px, 1px) scale(1);
-        -o-transform: rotate(10deg) translate(1px, 1px) scale(1);
-        transform: rotate(10deg) translate(1px, 1px) scale(1);
+        -webkit-transform: rotate(10deg) translate(1px, 1px) scale(1.2);
+        -moz-transform: rotate(10deg) translate(1px, 1px) scale(1.2);
+        -ms-transform: rotate(10deg) translate(1px, 1px) scale(1.2);
+        -o-transform: rotate(10deg) translate(1px, 1px) scale(1.2);
+        transform: rotate(10deg) translate(1px, 1px) scale(1.2);
     }
     10% {
-        -webkit-transform: rotate(-10deg) translate(-1px, -1px) scale(1.2);
-        -moz-transform: rotate(-10deg) translate(-1px, -1px) scale(1.2);
-        -ms-transform: rotate(-10deg) translate(-1px, -1px) scale(1.2);
-        -o-transform: rotate(-10deg) translate(-1px, -1px) scale(1.2);
-        transform: rotate(-10deg) translate(-1px, -1px) scale(1.2);
+        -webkit-transform: rotate(-10deg) translate(-1px, -1px) scale(1.4);
+        -moz-transform: rotate(-10deg) translate(-1px, -1px) scale(1.4);
+        -ms-transform: rotate(-10deg) translate(-1px, -1px) scale(1.4);
+        -o-transform: rotate(-10deg) translate(-1px, -1px) scale(1.4);
+        transform: rotate(-10deg) translate(-1px, -1px) scale(1.4);
     }
     20% {
-        -webkit-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        -moz-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        -ms-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        -o-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
+        -webkit-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        -moz-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        -ms-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        -o-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
     }
     30% {
-        -webkit-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        -moz-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        -ms-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        -o-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
+        -webkit-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        -moz-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        -ms-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        -o-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        transform: rotate(-10deg) translate(1px, -1px) scale(1);
         color: #7FC810;
     }
     40% {
-        -webkit-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        -moz-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        -ms-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        -o-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        transform: rotate(10deg) translate(-1px, -1px) scale(1);
+        -webkit-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        -moz-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        -ms-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        -o-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
         color: #7FC810;
     }
     50% {
-        -webkit-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        -moz-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        -ms-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        -o-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
+        -webkit-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        -moz-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        -ms-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        -o-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
         color: #7FC810;
     }
     60% {
-        -webkit-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        -moz-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        -ms-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        -o-transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
-        transform: rotate(10deg) translate(-1px, 1px) scale(1.4);
+        -webkit-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        -moz-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        -ms-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        -o-transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
+        transform: rotate(10deg) translate(-1px, 1px) scale(1.2);
         color: #7FC810;
     }
     70% {
-        -webkit-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        -moz-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        -ms-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        -o-transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
-        transform: rotate(-10deg) translate(1px, -1px) scale(1.2);
+        -webkit-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        -moz-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        -ms-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        -o-transform: rotate(-10deg) translate(1px, -1px) scale(1);
+        transform: rotate(-10deg) translate(1px, -1px) scale(1);
         color: #7FC810;
     }
     80% {
-        -webkit-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        -moz-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        -ms-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        -o-transform: rotate(10deg) translate(-1px, -1px) scale(1);
-        transform: rotate(10deg) translate(-1px, -1px) scale(1);
+        -webkit-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        -moz-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        -ms-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        -o-transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
+        transform: rotate(10deg) translate(-1px, -1px) scale(1.2);
         color: #7FC810;
     }
     90% {
-        -webkit-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        -moz-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        -ms-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        -o-transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
-        transform: rotate(-10deg) translate(1px, 1px) scale(1.2);
+        -webkit-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        -moz-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        -ms-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        -o-transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
+        transform: rotate(-10deg) translate(1px, 1px) scale(1.4);
     }
     100% {
-        -webkit-transform: rotate(0deg) translate(1px, -1px) scale(1.4);
-        -moz-transform: rotate(0deg) translate(1px, -1px) scale(1.4);
-        -ms-transform: rotate(0deg) translate(1px, -1px) scale(1.4);
-        -o-transform: rotate(0deg) translate(1px, -1px) scale(1.4);
-        transform: rotate(0deg) translate(1px, -1px) scale(1.4);
+        -webkit-transform: rotate(0deg) translate(1px, -1px) scale(1.2);
+        -moz-transform: rotate(0deg) translate(1px, -1px) scale(1.2);
+        -ms-transform: rotate(0deg) translate(1px, -1px) scale(1.2);
+        -o-transform: rotate(0deg) translate(1px, -1px) scale(1.2);
+        transform: rotate(0deg) translate(1px, -1px) scale(1.2);
     }
 }
 

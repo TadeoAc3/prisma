@@ -21,6 +21,7 @@ var swiper = new Swiper('.swiper-container', {
                 $usIconLeft.classList.remove("us-icon-animation");
                 $usIconCenter.classList.remove("us-icon-center-animation");
                 $usIconRight.classList.remove("us-icon-animation");
+                $usDescription.classList.remove("us-description-animation");
             }
             if(this.realIndex == 1) {
                 $secondTitle.classList.add("title-slide-animation");
@@ -28,6 +29,7 @@ var swiper = new Swiper('.swiper-container', {
                 $usIconLeft.classList.add("us-icon-animation");
                 $usIconCenter.classList.add("us-icon-center-animation");
                 $usIconRight.classList.add("us-icon-animation");
+                $usDescription.classList.add("us-description-animation");
                 $principalTitle.classList.remove('principal-title-animation');
                 $phoneShake.classList.remove("phone-shake-animation");
             }
@@ -38,6 +40,7 @@ var swiper = new Swiper('.swiper-container', {
                 $usIconLeft.classList.remove("us-icon-animation");
                 $usIconCenter.classList.remove("us-icon-center-animation");
                 $usIconRight.classList.remove("us-icon-animation");
+                $usDescription.classList.remove("us-description-animation");
                 $fanSpin.classList.remove("fan-img-animation");
                 $leafFalling.classList.remove("leaf-falling-animation");
                 $phoneShake.classList.add("phone-shake-animation");
@@ -105,6 +108,7 @@ const $sixthTitle = document.getElementById('sixth-title');
 const $seventhTitle = document.getElementById('seventh-title');
 const $eighthTitle = document.getElementById('eighth-title');
 const $ninethTitle = document.getElementById('nineth-title');
+const $usDescription = document.getElementById('us-description');
 const $usIconLeft = document.getElementById('us-icon-left');
 const $usIconCenter = document.getElementById('us-icon-center');
 const $usIconRight = document.getElementById('us-icon-right');

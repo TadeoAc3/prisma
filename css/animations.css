@@ -7,21 +7,29 @@
     /* animation-iteration-count: infinite; */
 }
 
-.us-description-animation {
-    animation-name: us-description;
-    animation-duration: 2s;
+.img-header-animation {
+    animation-name: img-header;
+    animation-duration: 5s;
     animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.btn-buy-animation {
+    animation-name: btn-buy;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .us-icon-animation {
     animation-name: us-icon;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
 
 .us-icon-center-animation {
     animation-name: us-icon-center;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
 
@@ -29,11 +37,12 @@
     animation-name: fan-spin;
     animation-duration: 5s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .leaf-falling-animation {
     animation-name: leaft-falling;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-timing-function: linear;
 }
 
@@ -45,19 +54,19 @@
 
 .left-machine-animation {
     animation-name: left-machine;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-timing-function: linear;
 }
 
 .center-machine-animation {
     animation-name: center-machine;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-timing-function: linear;
 }
 
 .right-machine-animation {
     animation-name: right-machine;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-timing-function: linear;
 }
 
@@ -99,12 +108,51 @@
     }
 }
 
-@keyframes us-description {
+@keyframes img-header {
     0% {
-
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    80% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-        
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes btn-buy {
+    0% {
+        -webkit-transform: translatey(0px);
+        -moz-transform: translatey(0px);
+        -ms-transform: translatey(0px);
+        -o-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-5px);
+        -moz-transform: translatey(-5px);
+        -ms-transform: translatey(-5px);
+        -o-transform: translatey(-5px);
+        transform: translatey(-5px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+        -moz-transform: translatey(0px);
+        -ms-transform: translatey(0px);
+        -o-transform: translatey(0px);
+        transform: translatey(0px);
     }
 }
 

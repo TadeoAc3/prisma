@@ -9,7 +9,7 @@
 
 .img-header-animation {
     animation-name: img-header;
-    animation-duration: 6s;
+    animation-duration: 5.5s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
@@ -82,7 +82,7 @@
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em;
-    animation: typing 4s steps(20, end);
+    animation: typing 5s steps(20, end);
 }
 
 .brand-animation:hover {
@@ -234,6 +234,9 @@
 @keyframes typing {
     0% { 
         width: 0 
+    }
+    10% {
+        width: 0;
     }
     100% { 
         width: 100% 

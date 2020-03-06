@@ -14,10 +14,17 @@
     animation-iteration-count: infinite;
 }
 
+.green-header {
+    background-color: #7FC810;
+}
+.blue-header {
+    background-color: #015181;
+}
+
 .btn-buy-animation {
     animation-name: btn-buy;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
@@ -54,19 +61,19 @@
 
 .left-machine-animation {
     animation-name: left-machine;
-    animation-duration: .5s;
+    animation-duration: .7s;
     animation-timing-function: linear;
 }
 
 .center-machine-animation {
     animation-name: center-machine;
-    animation-duration: .5s;
+    animation-duration: .7s;
     animation-timing-function: linear;
 }
 
 .right-machine-animation {
     animation-name: right-machine;
-    animation-duration: .5s;
+    animation-duration: .7s;
     animation-timing-function: linear;
 }
 
@@ -140,12 +147,19 @@
         -o-transform: translatey(0px);
         transform: translatey(0px);
     }
-    50% {
+    25% {
         -webkit-transform: translatey(-5px);
         -moz-transform: translatey(-5px);
         -ms-transform: translatey(-5px);
         -o-transform: translatey(-5px);
         transform: translatey(-5px);
+    }
+    75% {
+        -webkit-transform: translatey(5px);
+        -moz-transform: translatey(5px);
+        -ms-transform: translatey(5px);
+        -o-transform: translatey(5px);
+        transform: translatey(5px);
     }
     100% {
         -webkit-transform: translatey(0px);

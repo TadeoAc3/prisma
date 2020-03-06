@@ -14,6 +14,15 @@ var swiper = new Swiper('.swiper-container', {
     },
     on: {
         slideChangeTransitionStart:function(){
+            
+            if(isPair(this.realIndex)) {
+                $backHeader.classList.add('green-header');
+                $backHeader.classList.remove('blue-header');
+            } else {
+                $backHeader.classList.remove('green-header');
+                $backHeader.classList.add('blue-header');
+            } 
+
             console.log(this.realIndex);
             if(this.realIndex == 0) {
                 $secondTitle.classList.remove("title-slide-animation");
@@ -73,7 +82,6 @@ var swiper = new Swiper('.swiper-container', {
                 $leftMachine.classList.add("left-machine-animation");
                 $centerMachine.classList.add("center-machine-animation");
                 $rightMachine.classList.add("right-machine-animation");
-                $phoneShake.classList.remove("phone-shake-animation");
             }
             if(this.realIndex == 7) {
                 $eighthTitle.classList.add("title-slide-animation");
@@ -82,7 +90,6 @@ var swiper = new Swiper('.swiper-container', {
                 $leftMachine.classList.remove("left-machine-animation");
                 $centerMachine.classList.remove("center-machine-animation");
                 $rightMachine.classList.remove("right-machine-animation");
-                $phoneShake.classList.add("phone-shake-animation");
             }
             if(this.realIndex == 8) {
                 $ninethTitle.classList.add("title-slide-animation");
@@ -90,6 +97,7 @@ var swiper = new Swiper('.swiper-container', {
                 $phoneShake.classList.remove("phone-shake-animation");
             }
             if(this.realIndex == 9) {
+                $phoneShake.classList.add("phone-shake-animation");
                 $ninethTitle.classList.remove("title-slide-animation");
             }
         }
@@ -105,6 +113,7 @@ const $sixthTitle = document.getElementById('sixth-title');
 const $seventhTitle = document.getElementById('seventh-title');
 const $eighthTitle = document.getElementById('eighth-title');
 const $ninethTitle = document.getElementById('nineth-title');
+const $backHeader = document.getElementById('back-header');
 const $imgHeader = document.getElementById('img-header');
 const $btnBuy = document.getElementById('btn-buy');
 const $usIconLeft = document.getElementById('us-icon-left');
@@ -141,6 +150,11 @@ $(document).ready(function() {
     });
     
 });
+
+function isPair(number) { 
+    // number==8 ? true : number==9 ? false
+    return (number==8) ? true : (number==9) ? false : (number % 2) ? true : false; 
+}
 
 function animateYears(id, start, end, duration) {
     var range = end + start;
